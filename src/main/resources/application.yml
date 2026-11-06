@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: multi-model
+  ai:
+    chat:
+      client:
+        enabled: false
+    openai:
+      apikey: ${OPENAI_API_KEY}
+    ollama:
+      base-url: http://localhost:12434
+      chat:
+        options:
+          model: gemma3:1B-Q4_K_M
